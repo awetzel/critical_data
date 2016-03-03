@@ -79,7 +79,8 @@ One you have done that, to use the yubikey on another PC, you need to
   `gpg2 --change-pin`, then call the `fetch` command, which will download and
   install from the URL we set earlier the public certificate.
 - then we need to define the "stub" : ie the flag to say that the private key
-  is available BUT on a smartcard you need to plug in
+  is available BUT on a smartcard you need to plug in: `gpg2 --card-status`
+  will do the job.
 
 Then GO !
 
